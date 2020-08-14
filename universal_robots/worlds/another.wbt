@@ -1,0 +1,178 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Unviversal Robot UR3e, UR5e and UR10e grasping cans using Robotiq 3F grippers."
+  ]
+  title "Universal Robot"
+  basicTimeStep 16
+  physicsDisableAngularThreshold 0.1
+  contactProperties [
+    ContactProperties {
+      bounce 0.1
+    }
+    ContactProperties {
+      material1 "slope"
+      coulombFriction [
+        0.5
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.28456054679902987 0.918884570839674 0.2732699044502073 1.6029978450436366
+  position 2.1592503656687407 2.087512684103094 0.3833563655478768
+  exposure 1.7
+}
+TexturedBackground {
+  texture "factory"
+}
+Table {
+  translation 3.097723 0 -2.013972
+  size 1.8 0.7 0.8
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Table {
+  translation -1.419911 0 0.81333
+  rotation 0 1 0 -1.5707963071795863
+  name "table(1)"
+  size 1.8 0.7 0.8
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+Wall {
+  translation -2.835 0 -2.58
+  size 9 2.4 0.2
+  appearance Roughcast {
+    textureTransform TextureTransform {
+      scale 2 1
+    }
+  }
+}
+Wall {
+  translation 4.375 0 -2.58
+  name "wall(2)"
+  size 5 2.4 0.2
+  appearance Roughcast {
+    textureTransform TextureTransform {
+      scale 2 1
+    }
+  }
+}
+Wall {
+  translation 1.77 1.2 -2.58
+  name "wall(3)"
+  size 0.21 1.2 0.2
+  appearance Roughcast {
+    textureTransform TextureTransform {
+      scale 0.1 0.7
+    }
+  }
+}
+Wall {
+  translation 0 0 2.42
+  name "wall(1)"
+  size 15 2.4 0.2
+  appearance Roughcast {
+    textureTransform TextureTransform {
+      scale 2 1
+    }
+  }
+}
+Transform {
+  translation 1.77 1.05 -2.68
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.23 0.3 0.01
+      }
+    }
+  ]
+}
+DEF ROBOT UR5e {
+  hidden position_0_0 0.00012453203792212305
+  hidden translation_1 0 0 0.163
+  hidden rotation_1 0 0 1 0.00012453203798295424
+  hidden position_1_0 0.00014934147429238916
+  hidden translation_2 0 0.138 0
+  hidden rotation_2 0 1 0 1.570945341474292
+  hidden position_2_0 4.8782607865053446e-05
+  hidden translation_3 0 -0.131 0.425
+  hidden rotation_3 0 1 0 4.8782605765768115e-05
+  hidden position_3_0 -1.6825109836803473e-05
+  hidden translation_4 0 0 0.392
+  hidden rotation_4 0 1 0 1.5707791748901634
+  hidden position_4_0 -6.434758167787689e-06
+  hidden translation_5 0 0.127 0
+  hidden rotation_5 0 0 -1 6.434748615760826e-06
+  hidden position_5_0 6.481782740681417e-06
+  hidden translation_6 0 0 0.1
+  hidden rotation_6 0 1 0 6.481782454472828e-06
+  hidden position_7_0 3.6673565060277994e-07
+  hidden position_7_1 3.6673565477978385e-07
+  hidden position_7_2 1.5129987668009817e-09
+  hidden translation_8 -0.0455 0.0214 0.036
+  hidden rotation_8 0.706825225059804 0.7073882252408243 3.1296099859053577e-06 3.1415982594244287
+  hidden position_8_0 2.112122296205073e-07
+  hidden translation_9 0.02 0 0
+  hidden rotation_9 0 0 1 2.1073424255447025e-07
+  hidden position_9_0 3.0710509362595874e-08
+  hidden translation_10 0.05 -0.028 0
+  hidden rotation_10 0 0 -1 0.5199999692894902
+  hidden position_10_0 -4.796163466380676e-14
+  hidden translation_11 0.039 0 0
+  hidden translation_12 -0.0455 0.0214 -0.036
+  hidden rotation_12 0.706825225059804 0.7073882252408243 3.1296099873815638e-06 3.1415982594244314
+  hidden position_12_0 2.112121073592919e-07
+  hidden translation_13 0.02 0 0
+  hidden rotation_13 0 0 1 2.1073424255447025e-07
+  hidden position_13_0 3.07104911280152e-08
+  hidden translation_14 0.05 -0.028 0
+  hidden rotation_14 0 0 -1 0.5199999692895092
+  hidden position_14_0 -4.789558475254367e-14
+  hidden translation_15 0.039 0 0
+  hidden translation_16 0.02 0 0
+  hidden rotation_16 0 0 1 0
+  hidden position_16_0 2.2004269855648053e-10
+  hidden translation_17 0.05 -0.028 0
+  hidden rotation_17 0 0 -1 0.5199999997799563
+  hidden position_17_0 9.068327381026824e-14
+  hidden translation_18 0.039 0 0
+  translation 1.18221e-09 0.59 -1.18221e-09
+  rotation -0.5773502691896258 -0.5773502691896258 -0.5773502691896258 2.094395
+  controller "ure_can_grasper"
+  selfCollision FALSE
+  toolSlot [
+    Robotiq3fGripper {
+      translation 0 0.04 0
+    }
+    DistanceSensor {
+      translation 0 0.1 0
+      rotation 0 0 1 1.570796
+    }
+  ]
+}
+Wall {
+  translation 0.09 0 0.4
+  name "wall(4)"
+  size 0.001 2.4 0.3
+}
