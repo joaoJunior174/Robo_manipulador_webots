@@ -24,7 +24,7 @@
 
 #define TIME_STEP 32
 
-//calcula a matriz HD e seus parametos
+//calcula a matriz DH e seus parametos
 void multiplicarMatriz(double mat1[4][4], double mat2[4][4], double mat3[4][4], double pos[4],double saida[4]){
 
  double matAux[4][4] = {
@@ -92,7 +92,7 @@ int main(int argc, char **argv) {
   double speed = 1.0;
   //ini = {-0.226, 0.671, 1.284, 1}
   
-  //aqui são as matrizes de hd
+  //aqui são as matrizes de DH
   double eixo1[4][4]={
   {cos(teta1),0,sin(teta1),0},
   {sin(teta1),0,-cos(teta1),0},
